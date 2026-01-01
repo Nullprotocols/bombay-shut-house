@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BOMBAY SHUT HOUSE | Custom Tailoring</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>BOMBAY SHUT HOUSE</h1>
+    <p>Premium Bespoke Tailoring • Since 1998</p>
+  </header>
+
+  <main class="container">
+    <h2>Place Your Custom Order</h2>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input id="name" type="text" placeholder="Your Name" />
+    </div>
+
+    <div class="form-group">
+      <label>Mobile</label>
+      <input id="mobile" type="tel" placeholder="10-digit Mobile Number" />
+    </div>
+
+    <div class="form-group">
+      <label>Address</label>
+      <textarea id="address" placeholder="Full Address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Garment</label>
+      <select id="garment">
+        <option>Shirt</option>
+        <option>Pant</option>
+        <option>Kurta</option>
+        <option>Suit</option>
+        <option>Blouse</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Fabric</label>
+      <select id="fabric">
+        <option>Cotton</option>
+        <option>Linen</option>
+        <option>Wool</option>
+        <option>Silk</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Fit</label>
+      <select id="fit">
+        <option>Regular</option>
+        <option>Slim</option>
+        <option>Comfort</option>
+      </select>
+    </div>
+
+    <h3>Measurements (inches)</h3>
+
+    <div class="grid">
+      <input id="chest" type="number" placeholder="Chest" />
+      <input id="waist" type="number" placeholder="Waist" />
+      <input id="length" type="number" placeholder="Length" />
+    </div>
+
+    <button class="order-btn" onclick="sendOrderWhatsApp()">
+      Order on WhatsApp
+    </button>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
